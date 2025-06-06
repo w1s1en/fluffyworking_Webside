@@ -47,3 +47,63 @@ body {
 .active { /*gdy jest ta klasa to podświetla na czerwono*/
     background-color: #BF1A2F;
 }
+
+.dropdown input[type="checkbox"] {
+    display: none;
+}
+
+/* Styl przycisku rozwijającego */
+.dropbtn {
+    padding: 12px;
+    color: #BAFF29;
+    font-size: 17px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Styl rozwijanego menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    min-width: 160px;
+    border-radius: 10px;
+    padding: 5px 0;
+    margin-top: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    backdrop-filter: blur(30px);
+}
+
+/* Linki w rozwijanym menu */
+.dropdown-content a {
+    color: #BAFF29;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Efekt hover */
+.dropdown-content a:hover,
+.dropbtn:hover {
+    background-color: #3786BE;
+}
+
+/* Pokazanie menu po kliknięciu */
+.dropdown input[type="checkbox"]:checked + label + .dropdown-content {
+  display: block;
+}
+/* Styl aktywnego przycisku (np. tło czerwone) */
+.dropdown input[type="checkbox"]:checked + label {
+    background-color: #BF1A2F;
+    border-radius: 8px;
+}
+
+/* Opcjonalnie: obrót strzałki */
+.dropdown input[type="checkbox"]:checked + label i.fa-caret-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}

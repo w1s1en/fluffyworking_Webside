@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--ikonki w menu https://fontawesome.com/search?o=r&ic=free&s=regular&ip=classic-->
-    <link rel="icon" type="image/x-icon" href="images/wisien_logo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="images/wisien_logo.png" />
     <title>Main site</title>
 </head>
-<div class="navigation_bar">
-    <a href="index.html" title="Main Page"><i class="fa-solid fa-house-chimney"></i> Główna</a>
-    <a href="about_me.html" title="About Me"><i class="fa-regular fa-circle-user"></i> O Mnie</a>
-    <a href="photos.html" title="Photos"><i class="fa-regular fa-image"></i> Zdjęcia</a>
-    <a href="projects.html" title="Projects"><i class="fa-regular fa-image"></i> Projekty</a>
-    <a class="active" href="studies.html" title="Studies"><i class="fa-regular fa-hourglass-half"></i> Nauka</a>
-</div>
 <body>
-    <h1>
-         Wiśnia  
-    </h1> 
-    <p>
+    <div class="navigation_bar">
+        <a href="index.html" title="Main Page"><i class="fa-solid fa-house-chimney"></i> Główna</a>
+        <a href="about_me.html" title="About Me"><i class="fa-regular fa-circle-user"></i> O Mnie</a>
+        <a href="photos.html" title="Photos"><i class="fa-regular fa-image"></i> Zdjęcia</a>
 
-    </p>
+        <div class="dropdown">
+            <input type="checkbox" id="projects-toggle" />
+            <label class="dropbtn" for="projects-toggle">
+                <i class="fa-regular fa-image"></i> Projekty <i class="fa-solid fa-caret-down"></i>
+            </label>
+            <div class="dropdown-content">
+                <a href="projects.html"><i class="fa-regular fa-folder-open"></i> Wszystkie projekty</a>
+                <a href="Projects/weather_station.html">Stacja pogodowa</a>
+                <a href="Projects/Sky_tracker.html">Sky Tracker</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <input type="checkbox" id="studies-toggle" />
+            <label class="dropbtn" for="studies-toggle">
+                <i class="fa-regular fa-image"></i> Nauka <i class="fa-solid fa-caret-down"></i>
+            </label>
+            <div class="dropdown-content">
+                <a href="studies.html"><i class="fa-regular fa-folder-open"></i> Wszystkie materiały</a>
+                <a href="studies/Komendy_terminal.html">Komendy</a>
+                <a href="studies/sieci_komputerowe.html">Sieci komputerowe</a>
+            </div>
+        </div>
+    </div>
+
+    <h1>Wiśnia</h1>
+    <p></p>
 </body>
 </html>
