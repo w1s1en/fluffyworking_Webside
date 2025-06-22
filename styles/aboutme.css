@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50vh;
+    text-align: center;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 800px;
+
+    background-color: rgba(0, 0, 0, 0.5); /* ciemne, ale półprzezroczyste tło */
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+    font-size: 28px;
+    color: white;
+    line-height: 1.5;
+}

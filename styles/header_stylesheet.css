@@ -16,7 +16,7 @@ main{
     top: 0px;
     left: 0px;
     right: 0px;
-    background-color: black;
+    background-color: rgb(9, 3, 2);
 }
 .navleft{
     display: flex;
@@ -27,7 +27,7 @@ main{
     padding-left: 30px;
 }
 .text{
-    color: gray;
+    color: rgb(244, 237, 237);
     font-size: 35px;
     padding: 0px 50px 0px 10px;
     font-weight: bold;
@@ -40,7 +40,7 @@ main{
     flex: 1;
 }
 .header_link{
-    color: gray;
+    color: rgb(170, 180, 180);
     height: 100%;
     display: flex;
     align-items: center;
@@ -60,7 +60,7 @@ nav div i{
     align-items: center;
 }
 .active{
-    color: lime;
+    color: rgb(117, 255, 0);
     height: 100%;
     display: flex;
     align-items: center;
@@ -69,14 +69,14 @@ nav div i{
     font-size: 25px;
     font-weight: bold;
     border: none; /* resetuje wszystkie krawędzie */
-    border-bottom: 4px solid lime;
+    border-bottom: 4px solid rgb(117, 255, 0);
     border-radius: 2px;
 }
 .header_link:hover{
     color: whitesmoke;
 }
 .header_link:active{
-    background-color: gray;
+    background-color: rgb(244, 237, 237);;
     border-radius: 5px;
 }
 @media (max-width: 800px){
