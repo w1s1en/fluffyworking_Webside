@@ -2,3 +2,5 @@ Do zrobienia:
 - poprawić nazwy kart
 - dodać ikonki w menu rozwijanym
 - zmienić podkłady w podstronach, niebo może być ale np zasdtosować gradient na bardziej formalnych  
+- gra wisielec gera jedno lub wieloosobowa, w jednoosobowej zrobić jakiś bank słów które można wylosować (może nawet kategorie)
+-dodać link do gita
